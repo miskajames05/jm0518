@@ -8,6 +8,9 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This application serves as a checkout platform for customers to rent tools.
+ */
 public class Checkout {
 
     private static final int MINIMUM_RENTAL_DAY_COUNT = 1;
@@ -17,7 +20,7 @@ public class Checkout {
 
     public static void main(String[] args) {
         Checkout checkout = new Checkout();
-        checkout.checkout("YYY", 10, 10, "12/30/23");
+        checkout.checkout("CHNS", 10, 10, "12/30/23");
     }
 
     public RentalAgreement checkout(String toolCode, int rentalDayCount, int discountPercent, String checkoutDateString) {
